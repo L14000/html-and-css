@@ -22,16 +22,19 @@
 
 
 h1{     
-    display:block; /* inline, block etc*/ 
+    display:inline-block; /* inline, block etc*/ 
     background-color: rgb(53, 8, 28); /*background color of the h1*/
-    padding: 20px; /*padding of the h1*/
-    border: 51px; /*border of the h1*/
-    border-style: dotted; /*style of the border*/
-    border-color: black; /*color of the border*/
-    border-right: 50px; /*border of the h1*/
+    padding: 10px; /*padding of the h1*/
+    border: 20px; /*border of the h1*/
+    border-style: none; /*style of the border*/
+    border-color: rgb(39, 1, 1); /*color of the border*/
+    border-right: 20px; /*border of the h1*/
     border-top: 50ox; /*border of the h1*/
+    color: #c4bcbc;
     
 }
+
+
 
 /* hiding an element using none function */
 h2{ 
@@ -119,7 +122,7 @@ below */
 
 .navbar {
     display: flex;
-    justify-content: center; /* Align buttons in the center */
+    justify-content: justify - space-evenly; /* Align buttons in the center */
     gap: 45px; /* Space between buttons */
     background-color: #4d0916; /* Navigation bar background color */
     padding: 10px; /* Padding around the buttons */
@@ -430,3 +433,24 @@ below
 
 
 /*  */
+
+/*about us styling
+
+
+
+
+*/
+
+
+
+
+
+
+.about-us{
+    color: #ebb8b8;
+    text-align:left;
+    margin-left: 40px;
+    font-weight: bold;
+    
+
+}
