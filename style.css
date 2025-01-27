@@ -1,0 +1,432 @@
+
+
+
+.textme{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    /*font family of the text*/
+}
+.textme{display: inline; /*display of the text*/
+        font-size:22px ; /*font size of the text*/
+        color: rgb(228, 212, 215); /*color of the text*/
+}
+
+.image1{
+                display:inline-block ; /*display of the image*/
+                width: 300px; /*width of the image*/
+                height: 200px;; /*height of the image*/
+                position: fixed; /*position of the image*/
+                bottom: 0; /*bottom position of the image*/
+                right: 0;  /* now we have given this class the position where to be displayed */
+            }
+
+
+h1{     
+    display:block; /* inline, block etc*/ 
+    background-color: rgb(53, 8, 28); /*background color of the h1*/
+    padding: 20px; /*padding of the h1*/
+    border: 51px; /*border of the h1*/
+    border-style: dotted; /*style of the border*/
+    border-color: black; /*color of the border*/
+    border-right: 50px; /*border of the h1*/
+    border-top: 50ox; /*border of the h1*/
+    
+}
+
+/* hiding an element using none function */
+h2{ 
+    display: none; /*display of the h2*/
+    background-color: beige; /*background color of the h2*/
+    position: fixed; /*position of the h2*/
+    
+} 
+
+.crm{ /*class name*/
+    display: block; /*display of the crm*/
+    color: rgb(228, 212, 215); /*color of the crm*/
+
+}
+
+
+
+body{
+    background-color: rgb(202, 185, 193); /*background color of the body*/
+    
+    }
+
+.grid_example{ /*class name*/
+    color: rgb(63, 3, 16); /*color of the grid*/
+    display: grid; /*display of the grid*/
+    grid-template-columns: 1fr 1fr 1fr; /*grid template columns*/
+    text-align: left; /*text alignment of the grid*/
+    grid-template-columns: 20% 20% 20% 20% 20%; /*grid template columns*/
+    grid-template-rows:20% 20% 20% 20% 20% ; /*grid template rows*/
+}
+
+.new-grid{ /*class name*/
+    display: grid; /*display of the new grid*/
+    grid-template-columns: repeat(3,300px); /*grid template columns*/
+    grid-template-rows: repeat(7, 200px); /*grid template rows*/
+}
+
+/* why
+us
+styling
+below */
+
+
+.why-us{
+        color: #ebb8b8;
+        text-align:left;
+        margin-left: 40px;
+        font-weight: bold;
+        
+
+}
+
+
+
+/* sellingsims
+css
+styling
+below
+ */
+
+
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*font family of the body*/
+    margin: 0; /*margin of the body*/
+    padding: 0; /*padding of the body*/
+    line-height: 1.6; /*line height of the body*/
+}
+
+.container { /*class name*/
+    width: 100%; /*width of the container*/
+    max-width: 1100px; /*max width of the container*/
+    margin: 0 auto; /*margin of the container*/
+}
+
+
+
+
+/* Navigation
+Bar 
+css
+Styles
+below */
+
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Align buttons in the center */
+    gap: 45px; /* Space between buttons */
+    background-color: #4d0916; /* Navigation bar background color */
+    padding: 10px; /* Padding around the buttons */
+    box-shadow: 0 4px 6px rgba(240, 195, 195, 0.1); /* Optional shadow for style */
+    position: sticky; /* Keeps the nav at the top */
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+/* Button Styles */
+.nav-button {
+    background-color: #cabcc9; /* Button background */
+    color: #eceef0; /* Button text color */
+    border: 2px solid #130f0f; /* Border styling */
+    border-radius: 15px; /* Rounded corners */
+    padding: 10px 30px; /* Button size first hight then width */
+    font-size: 1rem; /* Text size */
+    cursor: pointer; /* Pointer on hover */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    font-weight: bolder;
+    display: block;
+    
+}
+
+.nav-button:hover {
+    background-color: #07c475; /* Change background on hover */
+    color: #ffffff; /* Change text color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) { /* For screens with a max width of 768px */
+    .navbar { /* Change the navigation bar */
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons */
+        gap: 10px; /* Adjust gap between buttons */
+    }
+
+    .nav-button { /* Adjust button size for smaller screens */
+        width: 80%; /* Make buttons wider for smaller screens */
+    }
+}
+
+
+header {
+    background-color: #03101f; /* colour of the background */
+    color: #888181; /* colour of the text */
+    text-align: center; /* alignment of the text */
+    padding: 20px 0; /* padding of the background */
+    
+}
+
+header h1 {
+    margin: 0; /* no margin */
+    font-size: 2.5rem; /* size of the text */
+}
+
+header p {
+    font-size: 2.1rem; /* size of the text */
+    
+}
+
+main {
+    padding: 20px 0; /* padding of the background */
+    
+}
+
+.packages {
+    display: flex; /* inline block, grid, flex, none etc */
+    gap: 20px; /* gap between the elements */
+    flex-wrap: wrap; /* wrap the elements */
+    justify-content: space-between; /* space between the elements */    
+}
+
+.package {
+    background: #f4f4f4; /* colour of the background */
+    padding: 20px; /* padding of the background */
+    border-radius: 8px; /* rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
+    flex: 1 1 calc(30% - 20px); /* width of the element */
+    text-align: center; /* alignment of the text */
+}
+
+.package h3 {
+    margin: 0 0 10px; /* margin of the text */
+    font-size: 1.5rem; /* size of the text */
+}
+
+.package p {
+    margin: 10px 0; /* margin of the text */
+}
+
+.package .price {
+    font-size: 1.25rem; /* size of the text */
+    color: #007bff; /* colour of the text */
+    font-weight: bold; /* weight of the text */
+}
+
+.Buyitnow{
+    background: #a71364; /* this will make buttons colour pinkish*/
+    color: #fff; /* this is the text colour of the text written inside the button*/
+    border: rgb(235, 22, 22); /*border of the button, doesnt really show any results*/
+    padding: 10px 100px; /* first is the hight of the buy it now buttons and second is the width*/
+    border-radius: 50px; /* this is the rounded corner of the button*/
+    cursor:pointer; /* this is the cursor shape when you hover over the button, zoom in ,out, grab etc*/
+    font-size: 1rem; /* this is the size of the text inside the button*/
+    
+}
+
+.Buyitnow:hover{
+    background: #07c475;     /*this will make the button green when the mouse comes hoovers on*/
+    /*transform: scale(1.5);*/ /*this will make the button bigger when the mouse comes hoovers on*/
+} 
+
+footer {
+    text-align: center;  /*footer text is center we can take it to the left or right */
+    padding: px 0;   /*pading should be reasonable bigger is messier*/
+    background: #03101f; /* footers back ground is blackish*/
+    color: #888181;  /* footer text is light brown*/
+    margin-top: 10px 30px;  /* margin should be reasonable bigger is messier*/
+}
+
+
+.logo-container {
+    background-color: #03101f;
+    position: absolute;
+    top: 45px; /* logo is 45px from the top */
+    left: 50px; /* logo is 50px from the left */
+          /* Ensures the logo appears above other elements not nehind or somthing */
+}
+
+.logo {
+    max-width: 200px; /* Ensures the logo doesn't get too big */
+    height: auto; /* Ensures the logo doesn't get distorted */
+
+}
+
+
+
+/* countries
+we
+cover 
+css below */
+
+
+
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3b0202;
+    color: #333;
+}
+
+/* Container for the country list */
+.country-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #eedddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.country-container h1 {
+    margin-bottom: 100px;
+    color: #007bff;
+}
+
+
+/* Country List Grid */
+.country-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 55px;
+}
+
+/* Country Box Styling */
+.country-box {
+    background-color: #720360;
+    color: #ddd1d1;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid #130f0f;
+    
+}
+
+/* Hover Effect for Country Boxes, not happening for some reason */ 
+.country-box:hover{
+    background: #07c475;
+    transform: scale(1.5);
+    box-shadow: 0 6px 12px rgba(23, 228, 84, 0.2);
+}
+
+
+
+
+
+
+/* 
+
+contact 
+us
+page
+css
+below
+
+*/
+
+
+
+
+
+
+/* Contact Us below */
+.contact-us { /* this is the class for the contact us */
+    background-color: #03101f; /* background of the contact us is blackish */
+    padding: 40px 20px; /* padding of the contact us is 40px h>w */
+    text-align: center; /* text of the contact us is center */
+}
+
+
+
+.contact-us p { /* this is the class for the contact us paragraph */
+    font-size: 1.2rem; /* font size of the contact us paragraph is 1.2rem */
+    margin-bottom: 20px; /* margin bottom of the contact us paragraph is 20px */
+    color: #c4bcbc; /* text of the contact us paragraph is light grey */
+}
+.contact-form { /* this is the class for the contact form */
+    max-width: 600px; /* maximum width of the contact form is 600px */
+    margin: 0 auto; /* margin of the contact form is 0 auto */
+    text-align: left; /* text of the contact form is left */
+}
+
+.form-group { /* this is the class for the form group */
+    margin-bottom: 15px; /* margin bottom of the form group is 15px */
+}
+
+.form-group label { /* this is the class for the form group label */
+    display: block; /* display of the form group label is block */
+    font-size: 1rem; /* font size of the form group label is 1rem */
+    margin-bottom: 5px; /* margin bottom of the form group label is 5px */
+    color: #c5bdbd; /* text of the form group label is light grey */
+}
+
+.form-group input, 
+.form-group textarea { /* this is the class for the form group input and textarea */
+    width: 100%; /* width of the form group input and textarea is 100% */
+    padding: 10px; /* padding of the form group input and textarea is 10px */
+    font-size: 1rem; /* font size of the form group input and textarea is 1rem */
+    border: 1px solid #ccc; /* border of the form group input and textarea is 1px solid light grey */
+    border-radius: 5px; /* border radius of the form group input and textarea is 5px */
+    box-sizing: border-box; /* box sizing of the form group input and textarea is border box */
+}
+
+.form-group input:focus,
+.form-group textarea:focus { /* this is the class for the form group input and textarea focus */
+    border-color: #007bff; /* border color of the form group input and textarea focus is blue */
+    outline: none; /* outline of the form group input and textarea focus is none */
+}
+
+.submit-button { /* this is the class for the submit button */
+    background-color: #007bff; /* background color of the submit button is blue */
+    color: #fff; /* text color of the submit button is white */
+    border: none; /* border of the submit button is none */
+    padding: 10px 20px; /* padding of the submit button is 10px 20px */
+    font-size: 1rem; /* font size of the submit button is 1rem */
+    border-radius: 5px; /* border radius of the submit button is 5px */
+    cursor: pointer; /* cursor of the submit button is pointer */
+    transition: background-color 0.3s ease; /* transition of the submit button background color is 0.3s ease */
+}
+
+.submit-button:hover { /* this is the class for the submit button hover */
+    background-color: #0056b3; /* background color of the submit button hover is darker blue */
+}
+
+/* Responsive Design  for different dcreen sizes, tabs, mobile etc*/ 
+@media (max-width: 768px) 
+
+{ /* this is the media query for screens with a maximum width of 768px */
+
+
+    .contact-us h2 { /* this is the class for the contact us h2 */
+        font-size: 1.5rem; /* font size of the contact us h2 is 1.5rem */
+    }
+
+    .contact-us p { /* this is the class for the contact us p */
+        font-size: 1rem; /* font size of the contact us p is 1rem */
+    }
+
+    .submit-button { /* this is the class for the submit button */
+        width: 100%; /* width of the submit button is 100% */
+    } 
+
+} /* end of media query for screens with a maximum width of 768px */
+
+
+.submit{
+        background-color: #03101f; /* background color of the submit button is dark blue */
+        display:block; /* display of the submit button is block */
+}
+
+
+/*  */
