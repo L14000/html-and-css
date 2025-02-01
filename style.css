@@ -24,7 +24,7 @@
 h1{     
     display:inline-block; /* inline, block etc*/ 
     background-color: rgb(53, 8, 28); /*background color of the h1*/
-    padding: 10px; /*padding of the h1*/
+    padding: 20px; /*padding of the h1*/
     border: 20px; /*border of the h1*/
     border-style: none; /*style of the border*/
     border-color: rgb(39, 1, 1); /*color of the border*/
