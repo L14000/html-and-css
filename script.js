@@ -51,14 +51,15 @@ document.addEventListener('DOMContentLoaded', function () {
     audioElement.autoplay = true;
     audioElement.loop = true;
   
-    const sourceElement = document.createElement('source');
-    sourceElement.src = 'path_to_your_new_year_music.mp3'; // Ensure correct file path
-    sourceElement.type = 'audio/mp3';
-    audioElement.appendChild(sourceElement);
-    document.body.appendChild(audioElement);
+  //  const sourceElement = document.createElement('source');
+  //  sourceElement.src = 'path_to_your_new_year_music.mp3'; // Ensure correct file path
+  //  sourceElement.type = 'audio/mp3';
+  //  audioElement.appendChild(sourceElement);
+  //  document.body.appendChild(audioElement);
   
     // Add event listener to stop music when user leaves the page
     window.addEventListener('beforeunload', function () {
       audioElement.pause();
     });
   });
+  
