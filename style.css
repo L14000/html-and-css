@@ -77,15 +77,29 @@ us
 styling
 below */
 
-
+h4{ /*heading 3*/
+    color: #d8c3c3; /*color of the heading 3*/
+    font-size: 1.5rem; /*font size of the heading 3*/
+    margin-bottom: auto; /*margin bottom of the heading 3*/
+    }
 .why-us{
-        color: #ebb8b8;
-        text-align:left;
-        margin-left: 40px;
-        font-weight: bold;
+    display: grid; /*display of the why us*/
+    grid-template-columns: repeat(3, 1fr); /*grid template columns*/
+    gap: 20px; /*gap of the why us*/
+    color: #d8c3c3;
+    padding-left: 20px; /*padding left of the why us*/
+    
+    }
+        
         
 
-}
+.why-us img{ /*class name*/
+    width: 100%; /*width of the image*/
+    height: 100%; /*height of the image*/
+    object-fit: cover; /*object fit of the image*/
+    border-radius: 8px; /*border radius of the image*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*box shadow of the image*/
+    }
 
 
 
@@ -167,10 +181,10 @@ below */
 
 
 header {
-    background-color: #03101f; /* colour of the background */
+    background-color: #030d1b; /* colour of the background */
     color: #888181; /* colour of the text */
     text-align: center; /* alignment of the text */
-    padding: 20px 0; /* padding of the background */
+    padding: 48px 0; /* padding of the background, top and bottom */
     
 }
 
@@ -208,6 +222,7 @@ main {
 .package h3 {
     margin: 0 0 10px; /* margin of the text */
     font-size: 1.5rem; /* size of the text */
+    color: #0f0000; /* colour of the text */
 }
 
 .package p {
@@ -238,10 +253,11 @@ main {
 
 footer {
     text-align: center;  /*footer text is center we can take it to the left or right */
-    padding: px 0;   /*pading should be reasonable bigger is messier*/
+    padding: px10;   /*pading should be reasonable bigger is messier*/
     background: #03101f; /* footers back ground is blackish*/
     color: #888181;  /* footer text is light brown*/
-    margin-top: 10px 30px;  /* margin should be reasonable bigger is messier*/
+    margin-top: 20px 10px;  /* margin should be reasonable bigger is messier*/
+    margin-bottom: 10px;  /* margin should be reasonable bigger is messier*/
 }
 
 
@@ -447,10 +463,11 @@ below
 
 
 .about-us{
-    color: #ebb8b8;
-    text-align:left;
-    margin-left: 40px;
-    font-weight: bold;
+    display: grid; /*display of the why us*/
+    grid-template-columns: repeat(3, 1fr); /*grid template columns*/
+    gap: 20px; /*gap of the why us*/
+    color: #d8c3c3;
+    padding-left: 20px; /*padding left of the why us*/
     
 
 }
@@ -499,7 +516,7 @@ below
   
   .new-year-lights {
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -579,6 +596,7 @@ below
     padding-left: 6px;
     color: #00d4fa;
     animation: animate 4s infinite;
+    font: bold 30px "Poppins", sans-serif;
 }
 
 @keyframes animate {

@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // New Year Banner
     const banner = document.createElement('div');
     banner.classList.add('new-year-banner');
-    banner.innerHTML = "<p>Happy New Year 2025!</p>";
+    banner.innerHTML = "<p>Site is still under construction!</p>";
     document.body.appendChild(banner);
   
     // New Year Music
