@@ -503,13 +503,23 @@ body {
 
 /* Style all images to be the same size */
 .image-grid img {
-    width: 450px; /* Fixed width */
-    height: 200px; /* Fixed height */
+    width: 450px; /* Fixed width of images*/
+    height: 200px; /* Fixed height of images*/
     object-fit: cover; /* Ensures images fill the area without stretching */
     border-radius: 8px; /* Optional rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.back-to-home-button { /* this is the class for the back to home button */
+    display:flex; /* display of the back to home button is block */
+    background-color: #3f0317; /* background color of the back to home button is blue */
+    color: #fff; /* text color of the back to home button is white */
+    border:#0e0101; /* border of the back to home button is none */
+    padding: 10px 20px; /* padding of the back to home button is 10px 20px */
+    font-size: 1rem; /* font size of the back to home button is 1rem */
+    border-radius: 5px; /* border radius of the back to home button is 5px */
+    cursor: pointer; /* cursor of the back to home button is pointer */
+    
+}
 
 /* Styling for the message */
 .submit {
