@@ -11,16 +11,20 @@
         color: rgb(228, 212, 215); /*color of the text*/
 }
 
-.image1{
-                display:inline-block ; /*display of the image*/
-                width: 300px; /*width of the image*/
-                height: 200px;; /*height of the image*/
-                position: fixed; /*position of the image*/
-                bottom: 0; /*bottom position of the image*/
-                right: 0;  /* now we have given this class the position where to be displayed */
-            }
+/*.image1{
+        display:inline-block ; /*display of the image
+        width: 300px; /*width of the image
+        height: 200px;; /*height of the image
+        position: fixed; /*position of the image
+        bottom: 0; /*bottom position of the image
+        right: 0;  /* now we have given this class the position where to be displayed 
+        
+    }*/
 
 
+
+
+/* h1 styling below */
 h1{     
     display:inline-block; /* inline, block etc*/ 
     background-color: rgb(53, 8, 28); /*background color of the h1*/
@@ -78,30 +82,23 @@ styling
 below */
 
 h4{ /*heading 3*/
-    color: #d8c3c3; /*color of the heading 3*/
+    color: #110202; /*color of the heading 3*/
     font-size: 1.5rem; /*font size of the heading 3*/
     margin-bottom: auto; /*margin bottom of the heading 3*/
+    margin-left: 350px;
     }
 .why-us{
     display: grid; /*display of the why us*/
     grid-template-columns: repeat(3, 1fr); /*grid template columns*/
     gap: 20px; /*gap of the why us*/
-    color: #d8c3c3;
+    color: #0e0101;
     padding-left: 20px; /*padding left of the why us*/
+    
+    
     
     }
         
-        
-
-.why-us img{ /*class name*/
-    width: 100%; /*width of the image*/
-    height: 100%; /*height of the image*/
-    object-fit: cover; /*object fit of the image*/
-    border-radius: 8px; /*border radius of the image*/
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*box shadow of the image*/
-    }
-
-
+    
 
 /* sellingsims
 css
@@ -124,6 +121,22 @@ body {
     margin: 0 auto; /*margin of the container*/
 }
 
+/* site is still under construction banner styling */
+  /* New Year Banner */
+  .new-year-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 9999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
 
 
 
@@ -147,6 +160,10 @@ below */
 }
 
 /* Button Styles */
+
+a {
+    text-decoration: none;
+  } /* Remove underline from links, if any */
 .nav-button {
     background-color: #cabcc9; /* Button background */
     color: #eceef0; /* Button text color */
@@ -256,8 +273,8 @@ footer {
     padding: px10;   /*pading should be reasonable bigger is messier*/
     background: #03101f; /* footers back ground is blackish*/
     color: #888181;  /* footer text is light brown*/
-    margin-top: 20px 10px;  /* margin should be reasonable bigger is messier*/
-    margin-bottom: 10px;  /* margin should be reasonable bigger is messier*/
+    margin-top: auto;  /* margin should be reasonable bigger is messier*/
+    margin-bottom: 5px;  /* margin should be reasonable bigger is messier*/
 }
 
 
@@ -275,7 +292,16 @@ footer {
 
 }
 
-
+.why-us{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align:left;
+    background-color: #ddd1d1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    }
 
 /* countries
 we
@@ -344,27 +370,21 @@ body {
 
 
 
-/* 
-
-contact 
-us
-page
-css
-below
-
-*/
-
-
-
-
-
+/* contact us page css below */
 
 /* Contact Us below */
 .contact-us { /* this is the class for the contact us */
     background-color: #03101f; /* background of the contact us is blackish */
     padding: 40px 20px; /* padding of the contact us is 40px h>w */
     text-align: center; /* text of the contact us is center */
-}
+    max-width: 1200px; /* maximum width of the contact us is 1200px */
+    margin: 20px auto; /* margin of the contact us is 20px auto */
+    border-radius: 8px; /* border radius of the contact us is 8px */
+    color: #03101f; /* text of the contact us is blackish */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    }
+
 
 
 
@@ -450,114 +470,25 @@ below
 
 /*  */
 
-/*about us styling
-
-
-
-
-*/
-
-
-
-
+/*about us styling below */
 
 
 .about-us{
     display: grid; /*display of the why us*/
     grid-template-columns: repeat(3, 1fr); /*grid template columns*/
     gap: 20px; /*gap of the why us*/
-    color: #d8c3c3;
+    color: #0e0d0d; /*color of the why us*/
     padding-left: 20px; /*padding left of the why us*/
+    max-width: 1200px; /*max width of the why us*/
+    margin: 20px auto; /*margin of the why us*/
+    padding: 20px; /*padding of the why us*/
+    text-align:left; /*text align of the why us*/
+    background-color: #ddd1d1; /*background color of the why us*/
+    border-radius: 8px; /*border radius of the why us*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*box shadow of the why us*/
     
-
-}
-
-
-
-/* snow part of js*/
-
-
-
-      /* Snowfall Effect */
-   
-  /* Snowfall Effect */
-
-  
-  #snow {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 9999;
-  }
-  
-  .snowflake {
-    position: absolute;
-    top: -10px;
-    background-color: #fff;
-    opacity: 0.7;
-    border-radius: 50%;
-    animation: fall 10s linear infinite;
-  }
-  
-  @keyframes fall {
-    to {
-      transform: translateY(100vh);
     }
-  }
-  
-  /* New Year Lights Effect */
-  @keyframes blink {
-    0%, 100% { opacity: 0.5; }
-    50% { opacity: 1; }
-  }
-  
-  .new-year-lights {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-  }
-  
-  .new-year-lights .light {
-    width: 15px;
-    height: 15px;
-    margin: 5px;
-    border-radius: 50%;
-    animation: blink 1.5s infinite;
-  }
-  
-  .new-year-lights .light:nth-child(1) { background-color: red; }
-  .new-year-lights .light:nth-child(2) { background-color: gold; }
-  .new-year-lights .light:nth-child(3) { background-color: blue; }
-  .new-year-lights .light:nth-child(4) { background-color: green; }
-  .new-year-lights .light:nth-child(5) { background-color: purple; }
-  
-  /* New Year Banner */
-  .new-year-banner {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #28a745;
-    color: white;
-    text-align: center;
-    padding: 1px;
-    font-size: 2rem;
-    font-weight: bold;
-    z-index: 9999;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .new-year-banner p {
-    margin: 0;
-  }
-   
-
-
+    
 
 
 
@@ -566,42 +497,42 @@ below
 
 
   * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0; /* remove default padding */
+    margin: 0; /* remove default margin */
+    box-sizing: border-box; /* include padding and border in width and height */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* set font family */
 }
 
 
-.loader {
-    color: rgb(254, 252, 252);
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 25px;
-    box-sizing: content-box;
-    height: 40px;
-    padding: 10px 10px;
-    display: flex;
-    border-radius: 8px;
+.loader { /* loader class */
+    color: rgb(254, 252, 252); /* loader color */
+    font-family: "Poppins", sans-serif; /* loader font */
+    font-weight: 500; /* loader font weight */
+    font-size: 25px; /* loader font size */
+    box-sizing: content-box; /* include padding and border in width and height */
+    height: 40px; /* loader height */
+    padding: 10px 10px; /* loader padding */
+    display: flex;  /* loader display */
+    border-radius: 8px; /* loader border radius */
 }
 
-.words {
-    overflow: hidden;
-    position: relative;
+.words {    /* words class */
+    overflow: hidden;   /* hide overflow */
+    position: relative; /* position relative */
 }
 
-.word {
-    display: block;
-    height: 100%;
-    padding-left: 6px;
-    color: #00d4fa;
-    animation: animate 4s infinite;
-    font: bold 30px "Poppins", sans-serif;
+.word { /* word class */
+    display: block; /* display block */
+    height: 100%;   /* height 100% */
+    padding-left: 6px;  /* padding left 6px */
+    color: #00d4fa; /* color */
+    animation: animate 4s infinite; /* animation */
+    font: bold 35px "Poppins", sans-serif;  /* font */
 }
 
-@keyframes animate {
-    10% {
-        transform: translateY(-102%);
+@keyframes animate {    /* keyframes animate */
+    10% {   
+        transform: translateY(-102%);   /* transform */
     }
 
     25% {
@@ -632,3 +563,7 @@ below
         transform: translateY(-400%);
     }
 }
+
+
+
+
