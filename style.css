@@ -27,7 +27,7 @@
 /* h1 styling below */
 h1{     
     display:inline-block; /* inline, block etc*/ 
-    background-color: rgb(53, 8, 28); /*background color of the h1*/
+    background-color: none; /*background color of the h1*/
     padding: 20px; /*padding of the h1*/
     border: 20px; /*border of the h1*/
     border-style: none; /*style of the border*/
@@ -123,20 +123,20 @@ body {
 
 /* site is still under construction banner styling */
   /* New Year Banner */
-  .new-year-banner {
+.new-year-banner {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #28a745;
+    background-color: #057c91;
     color: white;
     text-align: center;
     padding: 1px;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
     z-index: 9999;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
+}
 
 
 
@@ -151,7 +151,7 @@ below */
     display: flex;
     justify-content: justify - space-evenly; /* Align buttons in the center */
     gap: 45px; /* Space between buttons */
-    background-color: #4d0916; /* Navigation bar background color */
+    background-color: none; /* Navigation bar background color */
     padding: 10px; /* Padding around the buttons */
     box-shadow: 0 4px 6px rgba(240, 195, 195, 0.1); /* Optional shadow for style */
     position: sticky; /* Keeps the nav at the top */
@@ -162,12 +162,13 @@ below */
 /* Button Styles */
 
 a {
+    color: #e8e7f1;
     text-decoration: none;
   } /* Remove underline from links, if any */
 .nav-button {
-    background-color: #cabcc9; /* Button background */
-    color: #eceef0; /* Button text color */
-    border: 2px solid #130f0f; /* Border styling */
+    background: #047b99; /* this will make buttons colour pinkish*/
+    color: #e8e7f1; /* this is the text colour of the text written inside the button*/
+    border: rgb(10, 0, 0);
     border-radius: 15px; /* Rounded corners */
     padding: 10px 30px; /* Button size first hight then width */
     font-size: 1rem; /* Text size */
@@ -179,7 +180,7 @@ a {
 }
 
 .nav-button:hover {
-    background-color: #07c475; /* Change background on hover */
+    background-color: #022c53; /* Change background on hover */
     color: #ffffff; /* Change text color on hover */
 }
 
@@ -193,6 +194,7 @@ a {
 
     .nav-button { /* Adjust button size for smaller screens */
         width: 80%; /* Make buttons wider for smaller screens */
+        
     }
 }
 
@@ -228,7 +230,7 @@ main {
 }
 
 .package {
-    background: #f4f4f4; /* colour of the background */
+    background: #030d1b; /* colour of the background */
     padding: 20px; /* padding of the background */
     border-radius: 8px; /* rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow */
@@ -239,23 +241,24 @@ main {
 .package h3 {
     margin: 0 0 10px; /* margin of the text */
     font-size: 1.5rem; /* size of the text */
-    color: #0f0000; /* colour of the text */
+    color: #9d9cd8; /* colour of the text */
 }
 
 .package p {
     margin: 10px 0; /* margin of the text */
+    color: #9d9cd8;
 }
 
 .package .price {
     font-size: 1.25rem; /* size of the text */
-    color: #007bff; /* colour of the text */
+    color: #9d9cd8; /* colour of the text */
     font-weight: bold; /* weight of the text */
 }
 
 .Buyitnow{
-    background: #a71364; /* this will make buttons colour pinkish*/
-    color: #fff; /* this is the text colour of the text written inside the button*/
-    border: rgb(235, 22, 22); /*border of the button, doesnt really show any results*/
+    background: #047b99; /* this will make buttons colour pinkish*/
+    color: #e8e7f1; /* this is the text colour of the text written inside the button*/
+    border: rgb(10, 0, 0); /*border of the button, doesnt really show any results*/
     padding: 10px 100px; /* first is the hight of the buy it now buttons and second is the width*/
     border-radius: 50px; /* this is the rounded corner of the button*/
     cursor:pointer; /* this is the cursor shape when you hover over the button, zoom in ,out, grab etc*/
@@ -264,7 +267,7 @@ main {
 }
 
 .Buyitnow:hover{
-    background: #07c475;     /*this will make the button green when the mouse comes hoovers on*/
+    background: #022c53;     /*this will make the button green when the mouse comes hoovers on*/
     /*transform: scale(1.5);*/ /*this will make the button bigger when the mouse comes hoovers on*/
 } 
 
@@ -279,8 +282,8 @@ footer {
 
 
 .logo-container {
-    background-color: #03101f;
-    position: absolute;
+    background-color: transparent; /* background of the logo container is transparent */
+    position: absolute; /* position of the logo container is absolute */
     top: 45px; /* logo is 45px from the top */
     left: 50px; /* logo is 50px from the left */
           /* Ensures the logo appears above other elements not nehind or somthing */
@@ -289,15 +292,17 @@ footer {
 .logo {
     max-width: 200px; /* Ensures the logo doesn't get too big */
     height: auto; /* Ensures the logo doesn't get distorted */
+    background-color: transparent; /* background of the logo is transparent */
 
 }
 
 .why-us{
+    color: #c4bcbc; /* text color of the why us is light grey */
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     text-align:left;
-    background-color: #ddd1d1;
+    background-color: #030d1b;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     
@@ -325,7 +330,7 @@ body {
     margin: 20px auto;
     padding: 20px;
     text-align: center;
-    background-color: #eedddd;
+    background-color: #030d1b;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -333,7 +338,7 @@ body {
 /* Title Styling */
 .country-container h1 {
     margin-bottom: 100px;
-    color: #007bff;
+    color: #0a69cf;
 }
 
 
@@ -346,7 +351,7 @@ body {
 
 /* Country Box Styling */
 .country-box {
-    background-color: #720360;
+    background-color: #047b99;
     color: #ddd1d1;
     padding: 15px;
     border-radius: 15px;
@@ -360,7 +365,7 @@ body {
 
 /* Hover Effect for Country Boxes, not happening for some reason */ 
 .country-box:hover{
-    background: #07c475;
+    background: #022c53;
     transform: scale(1.5);
     box-shadow: 0 6px 12px rgba(23, 228, 84, 0.2);
 }
@@ -477,13 +482,13 @@ body {
     display: grid; /*display of the why us*/
     grid-template-columns: repeat(3, 1fr); /*grid template columns*/
     gap: 20px; /*gap of the why us*/
-    color: #0e0d0d; /*color of the why us*/
+    color:#ddd1d1; /*color of the why us*/
     padding-left: 20px; /*padding left of the why us*/
     max-width: 1200px; /*max width of the why us*/
     margin: 20px auto; /*margin of the why us*/
     padding: 20px; /*padding of the why us*/
     text-align:left; /*text align of the why us*/
-    background-color: #ddd1d1; /*background color of the why us*/
+    background-color: #030d1b; /*background color of the why us*/
     border-radius: 8px; /*border radius of the why us*/
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*box shadow of the why us*/
     
