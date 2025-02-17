@@ -491,22 +491,25 @@ body {
     
 
 /* Apply grid layout to the container */
+/* Apply grid layout to the container */
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column layout */
     gap: 20px; /* Space between images */
     padding: 20px;
-    max-width: 90%; /* Keeps it responsive */
-    margin: auto; /* Centers the grid */
+    max-width: 90%;
+    margin: auto;
 }
 
-/* Style for images */
+/* Style all images to be the same size */
 .image-grid img {
-    width: 100%; /* Makes images fill the grid cell */
-    height: auto; /* Maintains aspect ratio */
+    width: 450px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures images fill the area without stretching */
     border-radius: 8px; /* Optional rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Styling for the message */
 .submit {
