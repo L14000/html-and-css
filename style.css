@@ -56,10 +56,10 @@ h2{
     
 } 
 
-@keyframes typing { /*keyframes of the typing*/
-    from { width: 0; } /*from width of the typing*/
-    to { width: 100%; } /*to width of the typing*/
-}
+/*@keyframes typing { /*keyframes of the typing*/
+   /* from { width: 0; } /*from width of the typing*/
+   /* to { width: 100%; } /*to width of the typing*/
+/*} */
 .crm{ /*class name*/
     display: block; /*display of the crm*/
     color: rgb(228, 212, 215); /*color of the crm*/
@@ -135,25 +135,22 @@ body {
 
 /* site is still under construction banner styling */
   /* New Year Banner */
-.new-year-banner {
+.new-announcment-banner {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #011f24;
+    background-color: #030d1b;
     color: white;
     text-align: center;
     padding: 1px;
     font-size: 1rem;
     font-weight: bold;
     z-index: 9999;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.new-year-banner:hover {
-    background-color: #3f0317;
     box-shadow: 0 6px 12px rgba(238, 15, 89, 0.2);
 }
+
+
 
 
 /* Navigation
@@ -196,7 +193,7 @@ a {
 }
 
 .nav-button:hover {
-    background-color: #022c53; /* Change background on hover */
+    background-color: #74172e; /* Change background on hover */
     color: #ffffff; /* Change text color on hover */
     box-shadow: 0 6px 12px rgba(238, 15, 89, 0.2); /* Add a shadow on hover */
     
@@ -285,7 +282,7 @@ main {
 }
 
 .Buyitnow:hover{
-    background: #022c53;     /*this will make the button green when the mouse comes hoovers on*/
+    background: #74172e;     /*this will make the button green when the mouse comes hoovers on*/
     /*transform: scale(1.5);*/ /*this will make the button bigger when the mouse comes hoovers on*/
     box-shadow: 0 6px 12px rgba(238, 15, 89, 0.2); /*this will make the button have a shadow when the mouse comes hoovers on*/
 } 
@@ -465,7 +462,7 @@ body {
 }
 
 .submit-button:hover { /* this is the class for the submit button hover */
-    background-color: #0056b3; /* background color of the submit button hover is darker blue */
+    background-color: #74172e; /* background color of the submit button hover is darker blue */
 }
 
 /* Responsive Design  for different dcreen sizes, tabs, mobile etc*/ 
@@ -595,22 +592,22 @@ body {
     font: bold 35px "Poppins", sans-serif;  /* font */
 }
 
-@keyframes animate {    /* keyframes animate */
-    
-    
 
+
+@keyframes animate{ /* keyframes animate */
+    
     25% {transform: translateY(-100%);}
 
     35% {transform: translateY(-202%);}
-
+    
     50% {transform: translateY(-200%);}
-
+    
     60% {transform: translateY(-302%);}
-
+    
     75% {transform: translateY(-300%);}
-
+    
     85% {transform: translateY(-402%);}
-
+    
     100% {transform: translateY(-400%);}
 }
 
