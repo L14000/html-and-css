@@ -196,6 +196,7 @@ a {
     background-color: #74172e; /* Change background on hover */
     color: #ffffff; /* Change text color on hover */
     box-shadow: 0 6px 12px rgba(238, 15, 89, 0.2); /* Add a shadow on hover */
+    transform: translate(-10px, -20px);
     
 }
 
@@ -285,6 +286,7 @@ main {
     background: #74172e;     /*this will make the button green when the mouse comes hoovers on*/
     /*transform: scale(1.5);*/ /*this will make the button bigger when the mouse comes hoovers on*/
     box-shadow: 0 6px 12px rgba(238, 15, 89, 0.2); /*this will make the button have a shadow when the mouse comes hoovers on*/
+    transform: rotate(30deg); /* Rotate button on hover */
 } 
 
 footer {
@@ -385,8 +387,9 @@ body {
 /* Hover Effect for Country Boxes, not happening for some reason */ 
 .country-box:hover{
     background: #022c53;
-    transform: scale(1.5);
+    transform: translate(-10px, -20px);
     box-shadow: 0 6px 12px rgba(238, 15, 89, 0.2);
+    transform: scale(1.5);
 }
 
 
