@@ -1,29 +1,4 @@
 
-
-
-.textme{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-    /*font family of the text*/
-}
-.textme{display: inline; /*display of the text*/
-        font-size:22px ; /*font size of the text*/
-        color: rgb(228, 212, 215); /*color of the text*/
-}
-
-/*.image1{
-        display:inline-block ; /*display of the image
-        width: 300px; /*width of the image
-        height: 200px;; /*height of the image
-        position: fixed; /*position of the image
-        bottom: 0; /*bottom position of the image
-        right: 0;  /* now we have given this class the position where to be displayed 
-        
-    }*/
-
-
-
-
 /* h1 styling below */
 h1{     
     display:inline-block; /* inline, block etc*/ 
@@ -38,35 +13,21 @@ h1{
     font-size: 2rem; /*font size of the h1*/
     margin: 0; /*margin of the h1*/
     text-align: center; /*text alignment of the h1*/
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /*font family of the h1*/
-    
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*font family of the h1*/
 }
 
+p {
+    color: #fff; /*color of the p*/
+}
+
+
 /* h2 styling below */
-
-
 /* hiding an element using none function */
 h2{ 
     display: none; /*display of the h2*/
     background-color: beige; /*background color of the h2*/
     position: fixed; /*position of the h2*/
-
-    
 } 
-
-/*@keyframes typing { /*keyframes of the typing*/
-   /* from { width: 0; } /*from width of the typing*/
-   /* to { width: 100%; } /*to width of the typing*/
-/*} */
-.crm{ /*class name*/
-    display: block; /*display of the crm*/
-    color: rgb(228, 212, 215); /*color of the crm*/
-
-}
-
-
 
 body{
     background-color: rgb(202, 185, 193); /*background color of the body*/
@@ -105,9 +66,6 @@ h4{ /*heading 3*/
     gap: 20px; /*gap of the why us*/
     color: #0e0101;
     padding-left: 20px; /*padding left of the why us*/
-    
-    
-    
     }
         
     
@@ -151,8 +109,6 @@ body {
 }
 
 
-
-
 /* Navigation
 Bar 
 css
@@ -166,7 +122,7 @@ below */
     gap: 45px; /* Space between buttons */
     background-color: none; /* Navigation bar background color */
     padding: 10px; /* Padding around the buttons */
-    box-shadow: 0 4px 6px rgba(240, 195, 195, 0.1); /* Optional shadow for style */
+    box-shadow: 0 4px 6px rgba(238, 15, 89, 0.2); /* Optional shadow for style */
     position: sticky; /* Keeps the nav at the top */
     top: 0;
     z-index: 1000; /* Ensures it stays above other content */
@@ -178,6 +134,7 @@ a {
     color: #e8e7f1;
     text-decoration: none;
   } /* Remove underline from links, if any */
+
 .nav-button {
     background: #047b99; /* this will make buttons colour pinkish*/
     color: #e8e7f1; /* this is the text colour of the text written inside the button*/
@@ -196,17 +153,27 @@ a {
     background-color: #74172e; /* Change background on hover */
     color: #ffffff; /* Change text color on hover */
     box-shadow: 0 6px 12px rgba(238, 15, 89, 0.2); /* Add a shadow on hover */
-    transform: translate(-10px, -20px);
+    transform: translate(-10px, -20px); /* Rotate button on hover */
     
 }
 
+/* Mobile Menu */
+.menu-toggle {
+    font-size: 30px;
+    color: white;
+    background: none;
+    border: none;
+    display: none;
+} 
+
 /* Responsive Design */
-@media (max-width: 768px) { /* For screens with a max width of 768px */
+@media (max-width: 1024px) { /* For screens with a max width of 1024px */
     .navbar { /* Change the navigation bar */
         flex-direction: column; /* Stack buttons vertically */
         align-items: center; /* Center buttons */
         gap: 10px; /* Adjust gap between buttons */
     }
+    
 
     .nav-button { /* Adjust button size for smaller screens */
         width: 80%; /* Make buttons wider for smaller screens */
@@ -217,7 +184,7 @@ a {
 
 header {
     background-color: #030d1b; /* colour of the background */
-    color: #888181; /* colour of the text */
+    color: #faf4f4; /* colour of the text */
     text-align: center; /* alignment of the text */
     padding: 48px 0; /* padding of the background, top and bottom */
     
@@ -272,7 +239,7 @@ main {
 }
 
 .Buyitnow{
-    background: #047b99; /* this will make buttons colour pinkish*/
+    background: #047b99; /* this will make buttons colour sccordingly*/
     color: #e8e7f1; /* this is the text colour of the text written inside the button*/
     border: rgb(10, 0, 0); /*border of the button, doesnt really show any results*/
     padding: 10px 100px; /* first is the hight of the buy it now buttons and second is the width*/
@@ -285,22 +252,27 @@ main {
 .Buyitnow:hover{
     background: #74172e;     /*this will make the button green when the mouse comes hoovers on*/
     /*transform: scale(1.5);*/ /*this will make the button bigger when the mouse comes hoovers on*/
-    box-shadow: 0 6px 12px rgba(238, 15, 89, 0.2); /*this will make the button have a shadow when the mouse comes hoovers on*/
-    transform: rotate(30deg); /* Rotate button on hover */
+    /*box-shadow: rgba(238, 15, 89, 0.2); /*this will make the button have a shadow when the mouse comes hoovers on*/
+    transform:translate(-10px, -20px); /* Rotate button on hover */
 } 
 
-footer {
+footer{
     text-align: center;  /*footer text is center we can take it to the left or right */
     padding: px10;   /*pading should be reasonable bigger is messier*/
     background: #03101f; /* footers back ground is blackish*/
     color: #888181;  /* footer text is light brown*/
     margin-top: auto;  /* margin should be reasonable bigger is messier*/
-    margin-bottom: 5px;  /* margin should be reasonable bigger is messier*/
+    margin-bottom: 15px;  /* margin should be reasonable bigger is messier*/
+    }
+    
+footer:hover{
+    background: #74172e;     /*this will make the button green when the mouse comes hoovers on*/
+    /*box-shadow: rgba(238, 15, 89, 0.2); /*this will make the button have a shadow when the mouse comes hoovers on*/
+    transform:scale(2rem); /* Rotate button on hover */
 }
 
-
 .logo-container {
-    background-color: transparent; /* background of the logo container is transparent */
+    background-color: transparent; /* background of the logo container will be transparent */
     position: absolute; /* position of the logo container is absolute */
     top: 45px; /* logo is 45px from the top */
     left: 40px; /* logo is 50px from the left */
@@ -319,23 +291,26 @@ footer {
 
 .why-us{
     color: #c4bcbc; /* text color of the why us is light grey */
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    text-align:left;
-    background-color: #030d1b;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* width of the why us is 1200px */
+    margin: 20px auto; /* margin of the why us is 20px */
+    padding: 20px; /* padding of the why us is 20px */
+    text-align:left; /* text alignment of the why us is left */
+    background-color: #030d1b; /* background color of the why us is dark grey */
+    border-radius: 8px; /* border radius of the why us is 8px */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* box shadow of the why us is 0 4px 6px rgba(0, 0, 0, 0.1) */
     
     }
 
+    .why-us:hover{ /* hover effect of the why us */
+        background: #030d1b; /* background color of the why us is dark grey */
+        transform: translate(-10px, -20px); /* transform of the why us is translate(-10px, -20px) */
+        box-shadow: 0 6px 12px rgba(238, 15, 89, 0.2); /* box shadow of the why us is 0 6px 12px rgba(238, 15, 89, 0.2) */
+        transform: scale(1.5); /* scale of the why us is 1.5 */
+    }
 /* countries
 we
 cover 
 css below */
-
-
-
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -387,7 +362,6 @@ body {
 /* Hover Effect for Country Boxes, not happening for some reason */ 
 .country-box:hover{
     background: #022c53;
-    transform: translate(-10px, -20px);
     box-shadow: 0 6px 12px rgba(238, 15, 89, 0.2);
     transform: scale(1.5);
 }
@@ -515,6 +489,12 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*box shadow of the why us*/
     
     }
+    .about-us:hover{ /*hover effect of the why us*/
+        background: #030d1b; /*background color of the why us*/
+        transform: translate(-10px, -20px); /*transform of the why us*/
+        box-shadow: 0 6px 12px rgba(238, 15, 89, 0.2); /*box shadow of the why us*/
+        transform: scale(1.5); /*scale of the why us*/
+    }
     
 
 /* Apply grid layout to the container */
@@ -536,17 +516,7 @@ body {
     border-radius: 8px; /* Optional rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.back-to-home-button { /* this is the class for the back to home button */
-    display:flex; /* display of the back to home button is block */
-    background-color: #3f0317; /* background color of the back to home button is blue */
-    color: #fff; /* text color of the back to home button is white */
-    border:#0e0101; /* border of the back to home button is none */
-    padding: 10px 20px; /* padding of the back to home button is 10px 20px */
-    font-size: 1rem; /* font size of the back to home button is 1rem */
-    border-radius: 5px; /* border radius of the back to home button is 5px */
-    cursor: pointer; /* cursor of the back to home button is pointer */
-    
-}
+
 
 /* Styling for the message */
 .submit {
@@ -556,6 +526,25 @@ body {
     color: #333;
 }
 
+.back-home{ /* this is the class for the back home button */
+    background: #047b99; /* this will make buttons colour pinkish*/
+    color: #e8e7f1; /* this is the text colour of the text written inside the button*/
+    border: rgb(10, 0, 0);
+    border-radius: 15px; /* Rounded corners */
+    padding: 10px 30px; /* Button size first hight then width */
+    font-size: 1rem; /* Text size */
+    cursor: pointer; /* Pointer on hover */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    font-weight: bolder;
+    display: block;
+}
+
+.back-home:hover:hover{
+    background-color: #74172e; /* Change background on hover */
+    color: #ffffff; /* Change text color on hover */
+    box-shadow: 0 6px 12px rgba(238, 15, 89, 0.2); /* Add a shadow on hover */
+    transform: translate(-10px, -20px);
+}
 /*about us styling above*/
 
   /* i love holiday Destinations */
@@ -569,7 +558,7 @@ body {
 }
 
 
-.loader { /* loader class */
+.loader{ /* loader class */
     color: rgb(254, 252, 252); /* loader color */
     font-family: "Poppins", sans-serif; /* loader font */
     font-weight: 500; /* loader font weight */
@@ -581,12 +570,13 @@ body {
     border-radius: 8px; /* loader border radius */
 }
 
-.words {    /* words class */
+.words{    /* words class */
     overflow: hidden;   /* hide overflow */
     position: relative; /* position relative */
 }
 
-.word { /* word class */
+/* word class */
+.word{ 
     display: block; /* display block */
     height: 100%;   /* height 100% */
     padding-left: 6px;  /* padding left 6px */
@@ -596,12 +586,12 @@ body {
 }
 
 
-
-@keyframes animate{ /* keyframes animate */
+ /* keyframes animate */
+@keyframes animate{
     
-    25% {transform: translateY(-100%);}
+    25% {transform: translateY(-100%);}     
 
-    35% {transform: translateY(-202%);}
+    35% {transform: translateY(-202%);} 
     
     50% {transform: translateY(-200%);}
     
